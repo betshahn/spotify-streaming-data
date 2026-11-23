@@ -17,15 +17,19 @@ Exploring personal Spotify streaming history to identify listening habits, behav
 
 ### annual listening minutes
 <img src="analysis_output/figures/annual_listening_minutes.png" width="600">
+<p>Compares average listening time and streams per active day across years, providing insight into changes in daily listening habits.</p>
 
 ### average daily listening
 <img src="analysis_output/figures/average_daily_listening.png" width="600">
+<p>Examines differences in listening behavior between weekdays and weekends, comparing average streams and listening minutes per active day.</p>
 
 ### weekday vs. weekend listening
 <img src="analysis_output/figures/weekday_weekend_comparison.png" width="600">
+<p>Examines differences in listening behavior between weekdays and weekends, comparing average streams and listening minutes per active day.</p>
 
 ### data quality
 <img src="analysis_output/figures/data_quality_flags.png" width="600">
+<p>Summarizes potential data quality issues, including duplicate records, zero-duration streams, and missing values, to assess data reliability before analysis.</p>
 
 ## tools
 
