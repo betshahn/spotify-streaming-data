@@ -293,3 +293,65 @@ plt.savefig(
     dpi=300
 )
 plt.show()
+
+
+###### top songs and albums ######
+import pandas as pd
+import matplotlib.pyplot as plt
+from pathlib import Path
+
+
+## top tracks
+
+top_tracks = (
+    spotify_history.groupby(["track_name", "artist_name"])
+    .size()
+    .reset_index(name="streams")
+    .sort_values("streams", ascending=False)
+    .head(10)
+)
+
+top_tracks["label"] = (
+    top_tracks["track_name"] + " - " + top_tracks["artist_name"]
+)
+
+plt.figure(figsize=(12, 7))
+
+plt.barh(top_tracks["label"][::-1], top_tracks["streams"][::-1])
+
+plt.title("Top 10 Most Played Tracks")
+plt.xlabel("Number of Streams")
+plt.ylabel("Track")
+plt.tight_layout()
+
+plt.savefig("analysis_output/top_tracks.png", dpi=300)
+plt.close()
+
+
+## top albums
+
+top_albums = (
+    spotify_history.groupby(["album_name", "artist_name"])
+    .size()
+    .reset_index(name="streams")
+    .sort_values("streams", ascending=False)
+    .head(10)
+)
+
+top_albums["label"] = (
+    top_albums["album_name"] + " - " + top_albums["artist_name"]
+)
+
+plt.figure(figsize=(12, 7))
+
+plt.barh(top_albums["label"][::-1], top_albums["streams"][::-1])
+
+plt.title("Top 10 Most Played Albums")
+plt.xlabel("Number of Streams")
+plt.ylabel("Album")
+plt.tight_layout()
+
+plt.savefig("analysis_output/top_albums.png", dpi=300)
+plt.close()
+
+print("Top tracks and top albums figures saved.")
