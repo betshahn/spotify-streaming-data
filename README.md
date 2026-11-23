@@ -13,6 +13,20 @@ Exploring personal Spotify streaming history to identify listening habits, behav
 - Examine repeat listening behavior and music preference trends.
 - Develop visualizations to communicate findings.
 
+## visualizations from eda 
+
+### annual listening minutes
+![Annual Listening Minutes](analysis_output/figures/annual_listening_minutes.png)
+
+### average daily listening
+![Average Daily Listening](analysis_output/figures/average_daily_listening.png)
+
+### weekday vs. weekend listening
+![Weekday vs Weekend Comparison](analysis_output/figures/weekday_weekend_comparison.png)
+
+### data quality
+![Data Quality Flags](analysis_output/figures/data_quality_flags.png)
+
 ## tools
 
 - Python
