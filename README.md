@@ -6,14 +6,14 @@ Exploring personal Spotify streaming history to identify listening habits, behav
 
 ## some objectives
 
-- Analyze listening habits over time.
-- Identify favorite artists, tracks, and albums based on listening behavior.
-- Explore listening patterns by hour, day, month, and year.
-- Investigate song skipping and listening duration.
-- Examine repeat listening behavior and music preference trends.
-- Develop visualizations to communicate findings.
+1. Analyze listening habits over time.
+2. Identify favorite artists, tracks, and albums based on listening behavior.
+3. Explore listening patterns by hour, day, month, and year.
+4. Investigate song skipping and listening duration.
+5. Examine repeat listening behavior and music preference trends.
+6. Develop visualizations to communicate findings.
 
-## visualizations from eda 
+## visualizations from eda (obj. 1)
 
 ### annual listening minutes
 <img src="analysis_output/figures/annual_listening_minutes.png" width="600">
@@ -30,6 +30,34 @@ Exploring personal Spotify streaming history to identify listening habits, behav
 ### data quality
 <img src="analysis_output/figures/data_quality_flags.png" width="600">
 <p>Summarizes potential data quality issues, including duplicate records, zero-duration streams, and missing values, to assess data reliability before analysis.</p>
+
+## listening preferences (obj. 2)
+
+Identifying favorite artists, tracks, and albums by measuring listening frequency across the streaming history. Rankings are based on the number of recorded streams for each music entry.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <h3>Top Artists</h3>
+      <p>Ranks artists by total recorded streams to identify the artists most frequently listened to throughout the dataset.</p>
+      <img src="analysis_output/top_artists.png" width="400">
+    </td>
+    <td align="center" width="50%">
+      <h3>Top Tracks</h3>
+      <p>Identifies the most frequently played individual tracks, highlighting songs with the highest listening frequency.</p>
+      <img src="analysis_output/top_tracks.png" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <h3>Top Albums</h3>
+      <p>Ranks albums based on listening activity to reveal which albums received the most engagement over the recorded listening history.</p>
+      <img src="analysis_output/top_albums.png" width="400">
+    </td>
+    <td align="center" width="50%">
+    </td>
+  </tr>
+</table>
 
 ## tools
 
