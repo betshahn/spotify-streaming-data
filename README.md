@@ -45,7 +45,7 @@ Identifying favorite artists, tracks, and albums by measuring listening frequenc
     <td align="center" width="50%">
       <h3>Top Tracks</h3>
       <p>Identifies the most frequently played individual tracks, highlighting songs with the highest listening frequency.</p>
-      <img src="analysis_output/top_tracks.csv" width="400">
+      <img src="analysis_output/top_tracks.png" width="400">
     </td>
   </tr>
   <tr>
