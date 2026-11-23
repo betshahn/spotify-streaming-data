@@ -16,16 +16,16 @@ Exploring personal Spotify streaming history to identify listening habits, behav
 ## visualizations from eda 
 
 ### annual listening minutes
-![Annual Listening Minutes](analysis_output/figures/annual_listening_minutes.png)
+<img src="analysis_output/figures/annual_listening_minutes.png" width="600">
 
 ### average daily listening
-![Average Daily Listening](analysis_output/figures/average_daily_listening.png)
+<img src="analysis_output/figures/average_daily_listening.png" width="600">
 
 ### weekday vs. weekend listening
-![Weekday vs Weekend Comparison](analysis_output/figures/weekday_weekend_comparison.png)
+<img src="analysis_output/figures/weekday_weekend_comparison.png" width="600">
 
 ### data quality
-![Data Quality Flags](analysis_output/figures/data_quality_flags.png)
+<img src="analysis_output/figures/data_quality_flags.png" width="600">
 
 ## tools
 
